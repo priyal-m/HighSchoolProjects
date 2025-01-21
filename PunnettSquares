@@ -1,0 +1,143 @@
+import java.util.Scanner;
+public class PunnettSquares
+{
+
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("These punnett square scenarios are based on my interests. Some of my interests are: birds, flowers, and emojis.");
+        char play;
+       
+        
+        
+        do{
+        System.out.println("Do you want to solve these problems? (y/n)");
+        play = input.next().charAt(0);
+        
+        }while(play != 'n' && play != 'y' && play != 'Y' && play != 'N');
+        
+        if(play == 'n' || play == 'N'){
+            System.out.println("Bye!");
+        }
+        if(play == 'y' || play == 'Y'){
+            
+        
+        
+            System.out.println("Problem 1: There are two birds, one is blue and one red. The blue allele is dominant to the red. What are the chances of the offspring being blue, if both birds have homozygous alleles? Enter a percentage (don't include sign). ");
+            int ans1 = input.nextInt();
+        
+            if(ans1 == 100){
+            System.out.println("That is correct!");
+            }else{
+            System.out.println("Sorry that is wrong. The correct answer is 100.");
+         }
+        
+            System.out.println("Solution:");
+            System.out.println("Step 1: B = blue (dominant) b = red (recessive).");
+            System.out.println("Step 2: BB x bb .");
+            System.out.println("Step 3:");
+            System.out.println("   B  B");
+            System.out.println(" ________");
+            System.out.println("b|Bb |Bb |");
+            System.out.println(" |___|___|");
+            System.out.println("b|Bb |Bb |");
+            System.out.println(" |___|___|");
+            System.out.println("Step 4: blue bird = 100% red bird = 0%.");
+            System.out.println("Step 5: The answer is 100.");
+        
+        
+            System.out.println("Co-Dominance: Problem 2: There are two emojis a hat and a smiling one. They are both homozygous and recessive. What are the chances of there being a cowboy? Enter a percentage (don't include sign). ");
+            int ans2 = input.nextInt();
+        
+            if(ans2 == 100){
+                System.out.println("That is correct!");
+            }else{
+                System.out.println("Sorry that is wrong. The correct answer is 100.");
+            }
+            
+        System.out.println("Solution:");
+        System.out.println("Step 1: h = hat (recessive) s = smiling face (recessive) hs =cowboy.");
+        System.out.println("Step 2: hh x ss .");
+        System.out.println("Step 3:");
+        System.out.println("   h  h");
+        System.out.println(" ________");
+        System.out.println("s|hs |hs |");
+        System.out.println(" |___|___|");
+        System.out.println("s|hs |hs |");
+        System.out.println(" |___|___|");
+        System.out.println("Step 4: cowboy = 100% hat = 0% smiling face = 0%.");
+        System.out.println("Step 5: The answer is 100.");
+        
+        
+        System.out.println("Incomplete Dominance: Problem 3: There are two flowers a yellow and a red. When they breed together they make a orange flower. What are the chances of a orange flower when a orange flower and red flower breed? Enter a percentage (don't include sign). ");
+        int ans3 = input.nextInt();
+        
+        if(ans3 == 50){
+            System.out.println("That is correct!");
+        }else{
+            System.out.println("Sorry that is wrong. The correct answer is 50.");
+        }
+        
+        System.out.println("Solution:");
+        System.out.println("Step 1: y = yellow (recessive) r = red recessive) yr = orange.");
+        System.out.println("Step 2: yr x rr .");
+        System.out.println("Step 3:");
+        System.out.println("   y  r");
+        System.out.println(" ________");
+        System.out.println("r|yr |rr |");
+        System.out.println(" |___|___|");
+        System.out.println("r|yr |rr |");
+        System.out.println(" |___|___|");
+        System.out.println("Step 4: orange = 50% yellow = 0% red = 50%.");
+        System.out.println("Step 5: The answer is 50.");
+        
+        System.out.println("Problem 4: There are two emojis a sad and a happy. Happy is dominant and sad is recessive.What are the chances of it being happy, when one emoji is heterozygous and the other is sad? Enter a percentage (don't include sign). ");
+        int ans4 = input.nextInt();
+        
+        if(ans4 == 50){
+            System.out.println("That is correct!");
+        }else{
+            System.out.println("Sorry that is wrong. The correct answer is 50.");
+        }
+        
+        System.out.println("Solution:");
+        System.out.println("Step 1: h = sad (recessive) H = happy (dominant).");
+        System.out.println("Step 2: hs x ss .");
+        System.out.println("Step 3:");
+        System.out.println("   H   h");
+        System.out.println(" ________");
+        System.out.println("h|Hh |hh |");
+        System.out.println(" |___|___|");
+        System.out.println("h|Hh |hh |");
+        System.out.println(" |___|___|");
+        System.out.println("Step 4: happy = 50% sad = 50%");
+        System.out.println("Step 5: The answer is 50.");
+        
+        
+        System.out.println("Problem 5: There are two flowers, a pink and a purple. Pink is dominant and purple is recessive. They are both heterozygous. What are the chances of there being a purple flower? Enter a percentage (don't include sign). ");
+        int ans5 = input.nextInt();
+        
+        if(ans5 == 25){
+            System.out.println("That is correct!");
+        }else{
+            System.out.println("Sorry that is wrong. The correct answer is 25.");
+        }
+        
+        System.out.println("Solution:");
+        System.out.println("Step 1: pink = P (dominant) purple = p (recessive) ");
+        System.out.println("Step 2: Pp x Pp.");
+        System.out.println("Step 3:");
+        System.out.println("   P  p");
+        System.out.println(" ________");
+        System.out.println("P|PP |Pp |");
+        System.out.println(" |___|___|");
+        System.out.println("p|Pp |pp |");
+        System.out.println(" |___|___|");
+        System.out.println("Step 4: pink = 75% purple = 25%.");
+        System.out.println("Step 5: The answer is 25.");
+        
+
+        }        
+        
+    }
+}
